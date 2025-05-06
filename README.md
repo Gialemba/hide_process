@@ -4,12 +4,12 @@ A simple Linux kernel module designed to hide a process from the system's proces
 
 ## Overview
 
-This kernel module allows you to conceal a running process by sending it a `SIGUSR2` signal. Upon receiving this signal, the module modifies the kernel's process list to hide the specified process, making it invisible to commands like `ps`, `top`, and `htop`.
+This kernel module allows you to conceal a running process by sending it a signal. Upon receiving this signal, the module modifies the kernel's process list to hide the specified process, making it invisible to commands like `ps`, `top`, and `htop`.
 
 ## Features
 
 - **Process Hiding**: Hide a process from standard system monitoring tools.
-- **Signal-Based Activation**: Trigger the hiding mechanism by sending a `SIGUSR2` signal to the target process.
+- **Signal-Based Activation**: Trigger the hiding mechanism by sending a signal to the target process.
 - **Lightweight**: Minimal codebase focused on the specific functionality of process hiding.
 
 ##  Installation
@@ -46,7 +46,7 @@ This kernel module allows you to conceal a running process by sending it a `SIGU
 
 1. Identify the PID of the process you want to hide.
 
-2. Send the `SIGUSR2` signal to the target process:
+2. Send the signal to the target process:
 
   ```bash
   kill -64 <pid>

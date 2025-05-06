@@ -62,7 +62,7 @@ This kernel module allows you to conceal a running process by sending it a `SIGU
 
 ### WARNINGS
 
-- **Kernel Compatibility*: This module is designed for educational purposes and may not be compatible with all Linux kernel versions.
+- **Kernel Compatibility**: This module is designed for educational purposes and may not be compatible with all Linux kernel versions.
 
 - **System Stability**: Improper use of kernel modules can lead to system instability. Ensure you understand the implications before loading this module.
 
